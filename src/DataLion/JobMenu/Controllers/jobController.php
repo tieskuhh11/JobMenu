@@ -25,9 +25,6 @@ class jobController
         if(sizeof($jobs) > Main::getInstance()->config->get("max-jobs")){
             return null;
         }
-        $xp = LevelManager::getManager()->getXp($playername);
-        $newxp = $xp + Main::getInstance()->config->get("xp-per-job-add");
-        LevelManager::getManager()->setXp($playername, $newxp);
 
         self::setJobs($playername, $jobs);
 
@@ -51,16 +48,7 @@ class jobController
                 $newjobs[] = $job;
             }
 
-            $xp = LevelManager::getManager()->getXp($playername);
-            $newxp = $xp - Main::getInstance()->config->get("xp-per-job-add");
-            LevelManager::getManager()->setXp($playername, $newxp);
-            self::setJobs($playername, $newjobs);
-            if(LevelManager::getManager()->getLevel($playername) <= 0){
-                if(LevelManager::getManager()->getLevel($playername) <= 0){
-                    LevelManager::getManager()->setXp($playername, 0);
-                    LevelManager::getManager()->setLevel($playername, 0);
-                }
-            }
+
 
             return true;
 

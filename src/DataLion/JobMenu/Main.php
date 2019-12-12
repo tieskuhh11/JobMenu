@@ -42,7 +42,6 @@ class Main extends PluginBase implements Listener {
         $default_values = [
             "max-jobs" => 2,
             "default-job" => "Burger",
-            "xp-per-job-add" => 1000
         ];
         $this->config = new Config($this->getDataFolder()."config.yml", Config::YAML, $default_values);
 
