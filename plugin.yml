@@ -1,0 +1,31 @@
+name: JobMenu
+main: DataLion\JobMenu\Main
+version: 1.0.0
+api: 3.9.5
+author: DataLion
+description: Job/Prefix Menu
+
+
+depend:
+ - PureChat
+ - FormAPI
+
+commands:
+ job:
+  description: Job menu main command.
+  usage: /job help
+  permission: jobmenu.command.job
+ jobs:
+  description: Open job menu.
+  usage: /jobs
+  permission: jobmenu.command.jobs
+
+
+
+permissions:
+ jobmenu.command.job:
+  description: Job menu main permission
+  default: op
+ jobmenu.command.jobs:
+  description: Open job menu permission
+  default: true
