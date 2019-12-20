@@ -1,5 +1,5 @@
 ![Discord](https://img.shields.io/discord/654599740247506963?color=DarkBlue&label=Discord&logo=Discord&logoColor=White&style=plastic)
-#JobMenu / Prefix Menu
+# JobMenu / Prefix Menu
 ## External plugins you need:
 
 
