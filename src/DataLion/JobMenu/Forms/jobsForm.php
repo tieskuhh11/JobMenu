@@ -51,7 +51,7 @@ class jobsForm
         if($pc instanceof PureChat){
             $pc->setPrefix($this->jobs[$data], $player);
         }
-        $player->sendMessage($this->jobs[$data]." §aGeselecteerd.");
+        $player->sendMessage($this->jobs[$data]." §aSelected.");
 
     }
 }
