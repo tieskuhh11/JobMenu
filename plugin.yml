@@ -8,7 +8,6 @@ description: Job/Prefix Menu
 
 depend:
  - PureChat
- - FormAPI
 
 commands:
  job:
