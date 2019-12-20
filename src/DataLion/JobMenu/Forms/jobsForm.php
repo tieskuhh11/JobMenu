@@ -29,8 +29,8 @@ class jobsForm
             }
             return false;
         });
-        $form->setTitle("Baan Selectie");
-        $form->setContent("Selecteer baan");
+        $form->setTitle("Job selection");
+        $form->setContent("Select Job");
         foreach ($this->jobs as $job){
             if($job == Main::getInstance()->config->get("default-job")){
                 $form->addButton("§l".$job);
