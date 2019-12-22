@@ -212,6 +212,7 @@ class Main extends PluginBase implements Listener {
 
 
     public function onjoin(PlayerJoinEvent $e){
+
         $player = $e->getPlayer();
         jobuserController::createUser($player->getName());
 

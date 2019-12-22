@@ -47,6 +47,7 @@ class jobController
             foreach ($jobs as $job) {
                 $newjobs[] = $job;
             }
+            self::setJobs($playername, $newjobs);
 
 
 
